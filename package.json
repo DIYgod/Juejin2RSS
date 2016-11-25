@@ -1,0 +1,27 @@
+{
+  "name": "Xitu2RSS",
+  "version": "0.0.1",
+  "description": "使用RSS订阅稀土掘金",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DIYgod/Xitu2RSS.git"
+  },
+  "keywords": [
+    "Weibo",
+    "RSS"
+  ],
+  "author": "DIYgod",
+  "license": "SATA",
+  "bugs": {
+    "url": "https://github.com/DIYgod/Xitu2RSS/issues"
+  },
+  "homepage": "https://github.com/DIYgod/Xitu2RSS#readme",
+  "devDependencies": {},
+  "dependencies": {
+    "express": "^4.14.0",
+    "log4js": "^0.6.38",
+    "node-fetch": "^1.6.3",
+    "xml2js": "^0.4.17"
+  }
+}
