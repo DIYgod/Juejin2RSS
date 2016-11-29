@@ -2,7 +2,9 @@ var fetch = require('node-fetch');
 var logger = require('../tools/logger');
 var xml2js = require('xml2js');
 var parseString = xml2js.parseString;
-var builder = new xml2js.Builder();
+var builder = new xml2js.Builder({
+    allowSurrogateChars: true
+});
 
 module.exports = function (req, res) {
     res.header('Content-Type', 'application/xml; charset=utf-8');
