@@ -1,20 +1,19 @@
 var log4js = require('log4js');
 log4js.configure({
-    appenders: [
-        {
-            type: "file",
-            filename: 'logs/Xitu2RSS.log',
+    appenders: {
+        Juejin2RSS: {
+            type: 'file',
+            filename: 'logs/Juejin2RSS.log',
             maxLogSize: 20480,
             backups: 3,
-            category: [ 'Xitu2RSS','console' ]
+            compress: true
         },
-        {
-            type: "console"
+        console: {
+            type: 'console'
         }
-    ],
-    replaceConsole: true
+    },
+    categories: { default: { appenders: ['Juejin2RSS', 'console'], level: 'INFO' } }
 });
-var logger = log4js.getLogger('Xitu2RSS');
-logger.setLevel('INFO');
+var logger = log4js.getLogger('Juejin2RSS');
 
 module.exports = logger;
